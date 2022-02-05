@@ -1,7 +1,8 @@
+import ImageSlider from "../components/ImageSlider";
 function Home() {
 	return (
-		<div style={{ backgroundColor: "blue", padding: "100px" }}>
-			<h1>Home page</h1>
+		<div>
+			<ImageSlider></ImageSlider>
 		</div>
 	);
 }
