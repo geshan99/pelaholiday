@@ -5,6 +5,7 @@ import Booking from "./pages/Booking";
 import ContactUs from "./pages/ContactUs";
 import Pakages from "./pages/Pakages";
 import WhereToGo from "./pages/WhereToGo";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
 	return (
