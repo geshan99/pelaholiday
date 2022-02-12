@@ -1,0 +1,28 @@
+div.carousel-indicators > button:nth-child(n) {
+  border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  height: 15px;
+  position: relative;
+  bottom: 20px;
+  margin: 1.5px;
+}
+
+div.carousel-inner > div.active.carousel-item > img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+#root > div:nth-child(2) > div > div > a.carousel-control-next {
+  display: none;
+}
+
+#root > div:nth-child(2) > div > div > a.carousel-control-prev {
+  display: none;
+}
+
+/* .carouselComp {
+  height: 100px;
+} */
