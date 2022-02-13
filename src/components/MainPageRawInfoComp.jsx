@@ -13,22 +13,22 @@ function MainPageRawInfoComp({
 }) {
   return (
     <Container fluid>
-      <Row className=" justify-content-md-center ">
+      <Row className=" justify-content-center ">
         <Col
-          className="d-flex titleContainer justify-content-md-center col-2 "
+          className="d-flex titleContainer justify-content-center col-5 col-sm-5 col-md-4 col-lg-3 p-1 my-4 text-white "
           style={{ backgroundColor: color }}
         >
           {title}
         </Col>
       </Row>
-      <Row className="row-auto">
-        <Col lg={4}>
+      <Row>
+        <Col>
           <RoundImage imageURL={image1} />
         </Col>
-        <Col lg={4}>
+        <Col>
           <RoundImage imageURL={image2} />
         </Col>
-        <Col lg={4}>
+        <Col>
           <RoundImage imageURL={image3} />
         </Col>
       </Row>

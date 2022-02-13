@@ -1,9 +1,14 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
 import './RoundImage.css';
 
 function RoundImage({ imageURL }) {
-  return <img src={imageURL} alt="" className="roundImage-image  mx-auto" />;
+  return (
+    <img
+      src={imageURL}
+      alt=""
+      className="roundImage-image  mx-auto rounded-circle d-block "
+    />
+  );
 }
 
 export default RoundImage;

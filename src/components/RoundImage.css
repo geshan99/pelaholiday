@@ -1,12 +1,6 @@
 .roundImage-image {
-  display: block;
   border: 3px solid #01ff48;
   width: 15vw;
   height: 15vw;
-  border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
   margin: 10px;
 }
