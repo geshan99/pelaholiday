@@ -3,7 +3,7 @@
 }
 .containerBackGroundImage:after {
   content: '';
-  background: url('../assets/beach.jpg') no-repeat center center;
+  background: url('../assets/beach.jpg') no-repeat center;
   position: absolute;
   background-size: cover;
   top: 0px;

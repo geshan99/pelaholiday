@@ -1,5 +1,21 @@
+import Footer from '../components/Footer';
+
 function WhereToGo() {
-	return <div>Where to go</div>;
+  return (
+    <div>
+      WhereToGo
+      <br />
+      WhereToGo
+      <br /> WhereToGo
+      <br />
+      WhereToGo
+      <br /> WhereToGo
+      <br />
+      WhereToGo
+      <br /> WhereToGo
+      <Footer />
+    </div>
+  );
 }
 
 export default WhereToGo;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import beachBackground from '../assets/beach.jpg';
 import MainPageRawInfoComp from './MainPageRawInfoComp';
 import daladaMaligawa from '../assets/MainPage/WhereToGo/dalada maligawa.jpg';
 import polhena from '../assets/MainPage/WhereToGo/polhena.jpg';
@@ -12,7 +11,6 @@ import beachPack from '../assets/MainPage/HolidayPackages/beach package.jpg';
 import junglePack from '../assets/MainPage/HolidayPackages/jungle package.jpg';
 import dolphinPack from '../assets/MainPage/HolidayPackages/dolphin package.jpg';
 import checkCircle from '../assets/checkCircle.svg';
-import beach from '../assets/beach.jpg';
 import './BackgroundComp.css';
 function BackgroundComp() {
   return (

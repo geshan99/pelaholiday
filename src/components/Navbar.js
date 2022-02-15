@@ -30,10 +30,10 @@ function NavBar() {
               <Nav.Link href="/wheretogo">
                 <h6>What to do</h6>
               </Nav.Link>
-              <Nav.Link href="/pakages">
+              <Nav.Link href="/packages">
                 <h6>Holiday pakges</h6>
               </Nav.Link>
-              <Nav.Link href="/pakages">
+              <Nav.Link href="/packages">
                 <h6>Plan your holiday</h6>
               </Nav.Link>
               <Nav.Link href="/about">

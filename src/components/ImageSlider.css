@@ -13,6 +13,8 @@ div.carousel-indicators > button:nth-child(n) {
 div.carousel-inner > div.active.carousel-item > img {
   object-fit: cover;
   height: 100vh;
+  /* background-repeat: no-repeat;
+  background-position: center; */
 }
 
 #root > div:nth-child(2) > div > div > a.carousel-control-next {
