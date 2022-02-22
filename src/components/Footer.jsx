@@ -39,7 +39,7 @@ function Footer() {
           </Row>
           <Row>
             <Col className="my-2">
-              <LocationComp />
+              <LocationComp height="12vw" width="12vw" />
             </Col>
           </Row>
         </Col>

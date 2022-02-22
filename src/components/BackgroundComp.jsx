@@ -1,15 +1,15 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import MainPageRawInfoComp from './MainPageRawInfoComp';
-import daladaMaligawa from '../assets/MainPage/WhereToGo/dalada maligawa.jpg';
-import polhena from '../assets/MainPage/WhereToGo/polhena.jpg';
-import sigiriya from '../assets/MainPage/WhereToGo/sigiriya.jpg';
-import surfing from '../assets/MainPage/WhatToDo/weligama surfing.jpg';
-import yaala from '../assets/MainPage/WhatToDo/yaala.jpg';
-import hike from '../assets/MainPage/WhatToDo/hike.jpg';
-import beachPack from '../assets/MainPage/HolidayPackages/beach package.jpg';
-import junglePack from '../assets/MainPage/HolidayPackages/jungle package.jpg';
-import dolphinPack from '../assets/MainPage/HolidayPackages/dolphin package.jpg';
+import daladaMaligawa from '../assets/Home Page/Where to go/dalada maligawa.jpg';
+import polhena from '../assets/Home Page/Where to go/polhena.jpg';
+import sigiriya from '../assets/Home Page/Where to go/sigiriya.jpg';
+import surfing from '../assets/Home Page/What to do/weligama surfing.jpg';
+import yaala from '../assets/Home Page/What to do/yaala.jpg';
+import hike from '../assets/Home Page/What to do/hike.jpg';
+import beachPack from '../assets/Home Page/Holiday packages/beach package.jpg';
+import junglePack from '../assets/Home Page/Holiday packages/jungle package.jpg';
+import dolphinPack from '../assets/Home Page/Holiday packages/dolphin package.jpg';
 import checkCircle from '../assets/checkCircle.svg';
 import './BackgroundComp.css';
 function BackgroundComp() {

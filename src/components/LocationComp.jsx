@@ -13,12 +13,13 @@ let icon = L.icon({
 });
 
 const position = [6.857735, 79.893163];
-function LocationComp() {
+function LocationComp({ height, width }) {
+  console.log(height, width);
   return (
     <MapContainer
       center={position}
       zoom={16}
-      style={{ height: '12vw', width: '12vw' }}
+      style={{ height: `${height}`, width: `${width}` }}
       // dragging={false}
       scrollWheelZoom={false}
     >
@@ -28,7 +29,7 @@ function LocationComp() {
       />
       <Marker position={position} icon={icon}>
         <Popup>
-          <Image fluid src={logo} width={80} height={80}></Image>
+          <Image fluid width={80} height={80} src={logo}></Image>
           <h5>Pela Holiday</h5>
           <br /> Your travelling partner...
         </Popup>

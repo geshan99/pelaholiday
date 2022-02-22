@@ -1,10 +1,10 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
-import polhena from '../assets/MainPage/WhereToGo/polhena.jpg';
+
 import { Container, Row } from 'react-bootstrap';
 import InfoButtons from './InfoButtons';
 
-function WhereToGoUpper() {
+function WhereToGoUpper({ backPhoto, title }) {
   return (
     <Container
       fluid
@@ -12,7 +12,7 @@ function WhereToGoUpper() {
       style={{ position: 'relative' }}
     >
       <Image
-        src={polhena}
+        src={backPhoto}
         style={{
           height: '100vh',
           width: '100%',
@@ -30,7 +30,7 @@ function WhereToGoUpper() {
           fontSize: '65px',
         }}
       >
-        Where to go
+        {title}
       </Container>
       <Row
         style={{

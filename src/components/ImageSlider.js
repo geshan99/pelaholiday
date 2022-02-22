@@ -1,11 +1,11 @@
 import { Carousel, Image } from 'react-bootstrap';
-import ninearch from '../assets/MainPage/MovingPhotos/ninearch.jpg';
-import safari from '../assets/MainPage/MovingPhotos/Safari.jpg';
-import whale from '../assets/MainPage/MovingPhotos/whale watching.jpg';
-import stilt from '../assets/MainPage/MovingPhotos/Stilt fishing.jpg';
-import pinnawala from '../assets/MainPage/MovingPhotos/pinnawala.jpg';
-import anuradhapura from '../assets/MainPage/MovingPhotos/anuradhapura.jpg';
-import './ImageSlider.css';
+import ninearch from '../assets/Home Page/Moving Photos/Ella.jpg';
+import safari from '../assets/Home Page/Moving Photos/Safari.jpg';
+import whale from '../assets/Home Page/Moving Photos/whale watching.jpg';
+import stilt from '../assets/Home Page/Moving Photos/Stilt fishing.jpg';
+import pinnawala from '../assets/Home Page/Moving Photos/pinnawala.jpg';
+import anuradhapura from '../assets/Home Page/Moving Photos/anuradhapura.jpg';
+import ImageSliderCSS from './ImageSlider.module.css';
 
 function ImageSlider() {
   return (
@@ -14,7 +14,7 @@ function ImageSlider() {
         controls={true}
         nextLabel={''}
         prevLabel={''}
-        className="carouselComp"
+        className="mainPageCarousel"
       >
         <Carousel.Item>
           <Image src={ninearch} className="w-100  "></Image>
