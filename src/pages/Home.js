@@ -1,11 +1,11 @@
-import BackgroundComp from '../components/BackgroundComp';
 import Footer from '../components/Footer';
 import ImageSlider from '../components/ImageSlider';
+import HomeMiddle from '../components/HomeMiddle';
 function Home() {
   return (
     <div>
       <ImageSlider></ImageSlider>
-      <BackgroundComp />
+      <HomeMiddle />
       <Footer />
     </div>
   );

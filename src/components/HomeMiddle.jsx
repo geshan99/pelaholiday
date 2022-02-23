@@ -11,8 +11,8 @@ import beachPack from '../assets/Home Page/Holiday packages/beach package.jpg';
 import junglePack from '../assets/Home Page/Holiday packages/jungle package.jpg';
 import dolphinPack from '../assets/Home Page/Holiday packages/dolphin package.jpg';
 import checkCircle from '../assets/checkCircle.svg';
-import './BackgroundComp.css';
-function BackgroundComp() {
+import './HomeMiddle.css';
+function HomeMiddle() {
   return (
     <Container
       fluid
@@ -110,4 +110,4 @@ function BackgroundComp() {
   );
 }
 
-export default BackgroundComp;
+export default HomeMiddle;
