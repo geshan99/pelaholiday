@@ -1,18 +1,12 @@
 import Footer from '../components/Footer';
+import HolidayPackagesMiddle from '../components/HolidayPackagesMiddle';
+import HolidayPackagesUpper from '../components/HolidayPackagesUpper';
 
 function Pakages() {
   return (
     <div>
-      Holiday Pakages
-      <br />
-      Holiday Pakages
-      <br /> Holiday Pakages
-      <br />
-      Holiday Pakages
-      <br /> Holiday Pakages
-      <br />
-      Holiday Pakages
-      <br /> Holiday Pakages
+      <HolidayPackagesUpper />
+      <HolidayPackagesMiddle />
       <Footer />
     </div>
   );

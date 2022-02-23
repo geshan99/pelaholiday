@@ -17,12 +17,7 @@ function BackgroundComp() {
     <Container
       fluid
       className="-bg-img bg-purple bg-blend-multiply containerBackGroundImage"
-      // style={{
-      //   background: `url(${beach}) no-repeat center `,
-      //   backgroundSize: 'cover',
-      // }}
     >
-      {/* <img className="bg" src={beach} alt="" /> */}
       <Row>
         <MainPageRawInfoComp
           title="Where to go"

@@ -5,7 +5,6 @@ import whale from '../assets/Home Page/Moving Photos/whale watching.jpg';
 import stilt from '../assets/Home Page/Moving Photos/Stilt fishing.jpg';
 import pinnawala from '../assets/Home Page/Moving Photos/pinnawala.jpg';
 import anuradhapura from '../assets/Home Page/Moving Photos/anuradhapura.jpg';
-import ImageSliderCSS from './ImageSlider.module.css';
 
 function ImageSlider() {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import './MainPageRawInfoComp.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import RoundImage from './RoundImage';
 import InfoButtons from './InfoButtons';
+import RoundImg from './RoundImg';
 
 function MainPageRawInfoComp({
   title,
@@ -16,22 +16,16 @@ function MainPageRawInfoComp({
     <Container fluid>
       <Row className=" justify-content-center ">
         <InfoButtons title={title} textColor="white" />
-        {/* <Col
-          className="d-flex titleContainer justify-content-center col-5 col-sm-5 col-md-4 col-lg-3 p-1 my-4 text-white "
-          style={{ backgroundColor: color }}
-        >
-          {title}
-        </Col> */}
       </Row>
       <Row>
         <Col>
-          <RoundImage imageURL={image1} layer={'none'} />
+          <RoundImg img={image1} />
         </Col>
         <Col>
-          <RoundImage imageURL={image2} layer={'none'} />
+          <RoundImg img={image2} />
         </Col>
         <Col>
-          <RoundImage imageURL={image3} layer={'none'} />
+          <RoundImg img={image3} />
         </Col>
       </Row>
       <Row>

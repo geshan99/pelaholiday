@@ -1,7 +1,7 @@
 .whereToGoBackGroundImage {
   background-color: black;
   background: url('../assets/Where to go/Locations/Sigiriya/bg photo.jpg')
-    no-repeat center fixed;
+    no-repeat center;
   position: relative;
   height: 240vh;
   background-size: cover;

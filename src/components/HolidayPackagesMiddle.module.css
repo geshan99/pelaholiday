@@ -1,0 +1,8 @@
+.holidayPackagesMiddleBackGroundImage {
+  background-color: black;
+  background: url('../assets//Home Page/BG photo/beach.jpg') no-repeat center;
+  position: relative;
+  height: 240vh;
+  background-size: cover;
+  overflow: hidden;
+}

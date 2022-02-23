@@ -2,13 +2,13 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ALocationSlider from './ALocationSlider';
 import LocationComp from './LocationComp';
-import WhereToGoUpperMiddleCSS from './WhereToGoUpperMiddle.module.css';
+import ALocationMiddleCSS from './ALocationMiddle.module.css';
 
-function WhereToGoUpperMiddle() {
+function ALocationMiddle() {
   return (
     <Container
       fluid
-      className={`bg-blend-multiply p-0 ${WhereToGoUpperMiddleCSS.whereToGoBackGroundImage}`}
+      className={`bg-blend-multiply p-0 ${ALocationMiddleCSS.whereToGoBackGroundImage}`}
     >
       <Row fluid className="m-0">
         <ALocationSlider />
@@ -51,7 +51,7 @@ function WhereToGoUpperMiddle() {
           className="d-flex m-5 justify-content-around p-auto m-auto border rounded-top rounded-bottom p-3"
           style={{ width: '15vw', height: '15vw' }}
         >
-          <Container className="text-left my-3 text-white">
+          <Container className="text-left text-white">
             For any question
           </Container>
           <Container className="text-left text-white">Email</Container>
@@ -63,4 +63,4 @@ function WhereToGoUpperMiddle() {
   );
 }
 
-export default WhereToGoUpperMiddle;
+export default ALocationMiddle;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
-// import { IoLocationSharp } from 'react-icons';
 import { IoLocationSharp, IoMailSharp, IoLogoFacebook } from 'react-icons/io5';
 import {
   IoMdCall,
@@ -9,8 +8,6 @@ import {
   IoLogoLinkedin,
 } from 'react-icons/io';
 import LocationComp from './LocationComp';
-// import { IoIosPin } from 'react-icons/io';
-import { RiWhatsappFill, RiWhatsappLine } from 'react-icons/ri';
 function Footer() {
   return (
     <Container fluid style={{ backgroundColor: 'black', color: 'white' }}>
