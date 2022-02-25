@@ -70,10 +70,10 @@ function HomeMiddle() {
           Why choose us
         </Col>
       </Row>
-      <Row className="font-3">
+      <Row className="font-4 extra-section py-2">
         <Col fluid>
-          <Row className="justify-content-center">
-            <img src={checkCircle} alt="" class="filter-green" />
+          <Row className="justify-content-center my-1">
+            <img src={checkCircle} alt="" />
             Happy Clients
           </Row>
           <Row className="justify-content-center">
@@ -82,7 +82,7 @@ function HomeMiddle() {
           </Row>
         </Col>
         <Col>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center my-1">
             <img src={checkCircle} alt="" />
             Tailor Mode
           </Row>
@@ -90,13 +90,13 @@ function HomeMiddle() {
             <img src={checkCircle} alt="" />
             Local Experts
           </Row>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center my-1">
             <img src={checkCircle} alt="" />
             24/7 Service
           </Row>
         </Col>
         <Col>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center my-1">
             <img src={checkCircle} alt="" />
             Easy Booking
           </Row>

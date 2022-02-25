@@ -23,7 +23,7 @@ function WhereToGoUpper({ backPhoto, title }) {
       <Container
         style={{
           position: 'absolute',
-          top: '50%',
+          top: '30%',
           left: '50%',
           color: 'white',
           transform: 'translateX(-50%)',

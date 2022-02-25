@@ -8,24 +8,25 @@ import {
   IoLogoLinkedin,
 } from 'react-icons/io';
 import LocationComp from './LocationComp';
+import './Footer.css';
 function Footer() {
   return (
     <Container
       fluid
-      className="py-4 mx-0 d-flex justify-content-between"
+      className="mx-0 d-flex justify-content-between footer-container"
       style={{ backgroundColor: 'black', color: 'white' }}
     >
       <Col className="col-auto">
-        <h3 className="mx-0">Pela Holiday</h3>
-        <Row md="auto" className="mx-0 my-1 font-3">
+        <h3 className="mx-0 font-0">Pela Holiday</h3>
+        <Row md="auto" className="mx-0 my-1 font-4">
           36/1<br></br>
           Nugegoda Road<br></br>
           Pepiliyana<br></br>
           Sri Lanka
         </Row>
-        <Row className="mx-0 font-3">+94 70 441 1511</Row>
-        <Row className="mx-0 my-1 font-3">info@pelaholidays.lk</Row>
-        <Row className="mx-0 my-3 font-3">
+        <Row className="mx-0 font-4">+94 70 441 1511</Row>
+        <Row className="mx-0 my-1 font-4">info@pelaholidays.lk</Row>
+        <Row className="mx-0 my-3 font-4">
           <LocationComp height="12vw" width="12vw" />
         </Row>
       </Col>
@@ -40,8 +41,8 @@ function Footer() {
           }}
         ></Container>
       </Col>
-      <Col className="col-auto mx-0 px-0">
-        <Row className="d-flex flex-column m-0 font-3 row-auto">
+      <Col className="col-auto mx-0">
+        <Row className="d-flex flex-column m-0 font-4 row-auto">
           <a href="/" style={{ color: 'white' }}>
             Home
           </a>
