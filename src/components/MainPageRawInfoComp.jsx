@@ -14,7 +14,7 @@ function MainPageRawInfoComp({
 }) {
   return (
     <Container fluid>
-      <Row className=" justify-content-center ">
+      <Row className=" justify-content-center">
         <InfoButtons title={title} textColor="white" />
       </Row>
       <Row>
@@ -29,7 +29,7 @@ function MainPageRawInfoComp({
         </Col>
       </Row>
       <Row>
-        <Col className="text-center">{description}</Col>
+        <Col className="text-center my-3 font-3">{description}</Col>
       </Row>
     </Container>
   );

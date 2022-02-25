@@ -9,10 +9,10 @@ function HolidayPackagesMiddle() {
       fluid
       className={HolidayPackagesMiddleCSS.holidayPackagesMiddleBackGroundImage}
     >
-      <Row className="text-center d-flex justify-content-center my-5">
+      <Row className="text-center d-flex justify-content-center my-5 font-0">
         Choose your dream holiday packages in Sri Lanka
       </Row>
-      <Row className="text-center d-flex justify-content-center my-3 px-5 ">
+      <Row className="text-center d-flex justify-content-center my-3 px-5 font-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, modi
         eaque! Quos ipsum explicabo repellendus doloribus suscipit labore
         consequuntur incidunt, accusamus consectetur, expedita nobis vitae

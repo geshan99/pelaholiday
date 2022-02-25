@@ -56,21 +56,21 @@ function HomeMiddle() {
       </Row>
       <Row className="justify-content-center">
         <Col
-          className="d-flex titleContainer justify-content-center col-4 col-sm-4 col-md-3 col-lg-2 p-1 my-4 "
+          className="d-flex titleContainer justify-content-center col-4 col-sm-4 col-md-3 col-lg-2 p-1 my-4 font-3"
           style={{ backgroundColor: '#7affaf' }}
         >
           Plan your holiday
         </Col>
       </Row>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center ">
         <Col
-          className="d-flex titleContainer justify-content-center col-5 col-sm-5 col-md-4 col-lg-3 p-1 my-4 text-white "
+          className="font-1 d-flex titleContainer justify-content-center col-5 col-sm-5 col-md-4 col-lg-3 p-1 my-4 text-white "
           style={{ backgroundColor: '#5ac3ff' }}
         >
           Why choose us
         </Col>
       </Row>
-      <Row>
+      <Row className="font-3">
         <Col fluid>
           <Row className="justify-content-center">
             <img src={checkCircle} alt="" class="filter-green" />

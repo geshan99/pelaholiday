@@ -3,8 +3,8 @@
   background: url('../assets/Where to go/Locations/Sigiriya/bg photo.jpg')
     no-repeat center;
   position: relative;
-  height: 240vh;
+  /* height: 240vh; */
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 /* src\assets\Where to go\Locations\Sigiriya\bg photo.jpg */

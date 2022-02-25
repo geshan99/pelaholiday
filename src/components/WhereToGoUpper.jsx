@@ -27,7 +27,7 @@ function WhereToGoUpper({ backPhoto, title }) {
           left: '50%',
           color: 'white',
           transform: 'translateX(-50%)',
-          fontSize: '65px',
+          fontSize: 'calc(2.6em + 2.8vw)',
         }}
       >
         {title}

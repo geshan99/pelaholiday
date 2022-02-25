@@ -20,27 +20,27 @@ function NavBar() {
             id="basic-navbar-nav"
             className="justify-content-end "
           >
-            <Nav className="me-auto fw-bold">
+            <Nav className="me-auto fw-bold ">
               <Nav.Link href="/">
-                <h6>Home</h6>
+                <h6 className="font-2">Home</h6>
               </Nav.Link>
               <Nav.Link href="/wheretogo">
-                <h6>Where to go</h6>
+                <h6 className="font-2">Where to go</h6>
               </Nav.Link>
               <Nav.Link href="/wheretogo">
-                <h6>What to do</h6>
+                <h6 className="font-2">What to do</h6>
               </Nav.Link>
               <Nav.Link href="/packages">
-                <h6>Holiday pakges</h6>
+                <h6 className="font-2">Holiday pakges</h6>
               </Nav.Link>
               <Nav.Link href="/packages">
-                <h6>Plan your holiday</h6>
+                <h6 className="font-2">Plan your holiday</h6>
               </Nav.Link>
               <Nav.Link href="/about">
-                <h6>About us</h6>
+                <h6 className="font-2">About us</h6>
               </Nav.Link>
               <Nav.Link href="/contact">
-                <h6>Contact us</h6>
+                <h6 className="font-2">Contact us</h6>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -29,8 +29,7 @@ function RoundImgLayer({ img, description, type }) {
             }}
             fluid
           ></Container>
-          <Row></Row>
-          <Container className="header-content-1" fluid>
+          <Container className="header-content-1 font-4" fluid>
             {description}
             <FcNext style={{ fontSize: '70px' }} />
           </Container>
@@ -58,7 +57,7 @@ function RoundImgLayer({ img, description, type }) {
             fluid
           ></Container>
           <Row></Row>
-          <Container className="header-content-2" fluid>
+          <Container className="header-content-2 font-4" fluid>
             {description}
             <FcNext style={{ fontSize: '70px' }} />
           </Container>
