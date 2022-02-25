@@ -13,19 +13,9 @@ function RoundImgLayer({ img, description, type }) {
     return (
       <Container className="containerRoundImg" fluid>
         <Container
+          className="roundAvatar-1"
           style={{
-            width: '15vw',
-            height: '15vw',
-            borderRadius: '100%',
-            top: '-20%',
-            left: '40%',
-            position: 'absolute',
             backgroundImage: `url("${img}")`,
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
-            border: '3px solid #01ff48',
-            zIndex: 1,
           }}
           fluid
         ></Container>
