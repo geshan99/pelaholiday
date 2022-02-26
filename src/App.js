@@ -6,6 +6,7 @@ import ContactUs from './pages/ContactUs';
 import Pakages from './pages/Pakages';
 import WhereToGo from './pages/WhereToGo';
 import ALocation from './pages/ALocation';
+import APackage from './pages/APackage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/packages" element={<Pakages></Pakages>}></Route>
         <Route path="/wheretogo" element={<WhereToGo></WhereToGo>}></Route>
         <Route path="/alocation" element={<ALocation></ALocation>}></Route>
+        <Route path="/apackage" element={<APackage></APackage>}></Route>
       </Routes>
     </>
   );

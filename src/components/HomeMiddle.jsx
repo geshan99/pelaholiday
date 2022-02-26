@@ -16,7 +16,7 @@ function HomeMiddle() {
   return (
     <Container
       fluid
-      className="-bg-img bg-purple bg-blend-multiply containerBackGroundImage"
+      className="bg-purple bg-blend-multiply containerBackGroundImage"
     >
       <Row>
         <MainPageRawInfoComp
