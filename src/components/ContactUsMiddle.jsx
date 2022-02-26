@@ -49,10 +49,7 @@ function ContactUsMiddle() {
 						style={{
 							display: "flex",
 							justifyContent: "center",
-
-							// padding: "1em",
 							margin: "0.7em",
-
 							maxWidth: "1200px",
 						}}
 					>
@@ -61,11 +58,9 @@ function ContactUsMiddle() {
 							action="mailto:sudasinghegeshan@gmail.com?subject=Contact form Data"
 							method="POST"
 							encType="text/plain"
-							// enctype="text/plain"
 						>
 							<Row
 								style={{
-									// backgroundColor: "red",
 									width: "75vw",
 									backgroundColor: "rgb(245, 247, 246,0.5)",
 									borderRadius: "20px",
