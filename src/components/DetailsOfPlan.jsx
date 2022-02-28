@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import DetailsOfPlanCSS from './DetailsOfPlan.module.css';
+import detailsOfPlanDataJSON from '../Data/PlanDetails.data';
 
 function DetailsOfPlan() {
   return (
@@ -11,7 +12,22 @@ function DetailsOfPlan() {
       <Row className="my-3 mx-4 font-3">Details Of Plan</Row>
       <Row className="m-0 font-3">
         <ul className="mx-0 px-0">
-          <li className="d-flex">
+          {detailsOfPlanDataJSON.map((singleData) => {
+            return (
+              <li className="d-flex">
+                <Col className="col-auto px-4">{singleData.dayNum}</Col>
+                <section>
+                  <div>{singleData.desData.desTitle}</div>
+                  <ul style={{ listStyle: 'circle' }}>
+                    {singleData.desData.data.map((singleDesData) => {
+                      return <li>{singleDesData}</li>;
+                    })}
+                  </ul>
+                </section>
+              </li>
+            );
+          })}
+          {/* <li className="d-flex">
             <Col className="col-auto px-4">Day 01</Col>
             <section>
               <div>Lorem ipsum dolor sit amet</div>
@@ -21,8 +37,8 @@ function DetailsOfPlan() {
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
               </ul>
             </section>
-          </li>
-          <li className="d-flex">
+          </li> */}
+          {/* <li className="d-flex">
             <Col className="col-auto px-4">Day 02</Col>
             <section>
               <div>Lorem ipsum dolor sit amet</div>
@@ -54,7 +70,7 @@ function DetailsOfPlan() {
                 <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
               </ul>
             </section>
-          </li>
+          </li> */}
         </ul>
       </Row>
     </Container>

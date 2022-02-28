@@ -1,8 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import APackageMiddleCSS from './BriefPlanComp.module.css';
+import briefPlanDataJSON from '../Data/BriefPlanData.data';
 
-function BriefPlanComp() {
+function BriefPlanComp({ briefPlanData }) {
   return (
     <Container
       fluid
@@ -11,18 +12,14 @@ function BriefPlanComp() {
       <Row className="m-1 font-3">Brief Plan</Row>
       <Row className="m-0 font-3">
         <ul style={{ listStyleType: 'none' }} className="m-1 p-0">
-          <li>
-            Day 01 <span className="px-2">Lorem ipsum dolor sit amet</span>
-          </li>
-          <li>
-            Day 02 <span className="px-2">Lorem ipsum dolor sit amet</span>
-          </li>
-          <li>
-            Day 03 <span className="px-2">Lorem ipsum dolor sit amet</span>
-          </li>
-          <li>
-            Day 04 <span className="px-2">Lorem ipsum dolor sit amet</span>
-          </li>
+          {briefPlanDataJSON.map((singlebriefPlanData) => {
+            return (
+              <li>
+                {singlebriefPlanData.dayName}
+                <span className="px-2">Lorem ipsum dolor sit amet</span>
+              </li>
+            );
+          })}
         </ul>
       </Row>
     </Container>

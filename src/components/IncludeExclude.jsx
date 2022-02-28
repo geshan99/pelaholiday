@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import IncludeExcludeCSS from './IncludeExclude.module.css';
+import inExDataJSON from '../Data/InExData.data';
 
 function IncludeExclude() {
   return (
@@ -10,13 +11,15 @@ function IncludeExclude() {
     >
       <Row className="m-0 d-flex flex-column">
         <Row className="m-0">Includes</Row>
-        <Row className="mx-5">Lorem ipsum dolor sit amet.</Row>
-        <Row className="mx-5">Lorem ipsum dolor sit amet.</Row>
+        {inExDataJSON.include.map((singleInData) => {
+          return <Row className="mx-5">{singleInData}</Row>;
+        })}
       </Row>
       <Row className="m-0 d-flex flex-column">
         <Row className="m-0">Excludes</Row>
-        <Row className="mx-5">Lorem ipsum dolor sit amet.</Row>
-        <Row className="mx-5">Lorem ipsum dolor sit amet.</Row>
+        {inExDataJSON.exclude.map((singleExData) => {
+          return <Row className="mx-5">{singleExData}</Row>;
+        })}
       </Row>
     </Container>
   );
