@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import IncludeExcludeCSS from './IncludeExclude.module.css';
-import inExDataJSON from '../Data/InExData.data';
+import APackageDataMain from '../Data/APackageDataMain';
 
-function IncludeExclude() {
+function IncludeExclude({ location }) {
+  const pageData = APackageDataMain(location).inExData;
   return (
     <Container
       fluid
@@ -11,13 +12,13 @@ function IncludeExclude() {
     >
       <Row className="m-0 d-flex flex-column">
         <Row className="m-0">Includes</Row>
-        {inExDataJSON.include.map((singleInData) => {
+        {pageData.include.map((singleInData) => {
           return <Row className="mx-5">{singleInData}</Row>;
         })}
       </Row>
       <Row className="m-0 d-flex flex-column">
         <Row className="m-0">Excludes</Row>
-        {inExDataJSON.exclude.map((singleExData) => {
+        {pageData.exclude.map((singleExData) => {
           return <Row className="mx-5">{singleExData}</Row>;
         })}
       </Row>

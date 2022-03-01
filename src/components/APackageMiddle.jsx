@@ -7,7 +7,7 @@ import DetailsOfPlan from './DetailsOfPlan';
 import ForAnyQComp from './ForAnyQComp';
 import IncludeExclude from './IncludeExclude';
 
-function APackageMiddle() {
+function APackageMiddle({ location }) {
   return (
     <Container
       fluid
@@ -16,24 +16,24 @@ function APackageMiddle() {
       <Container fluid className="d-flex">
         <Container fluid className="d-flex flex-column">
           <Container>
-            <BriefPlanComp />
+            <BriefPlanComp location={location} />
           </Container>
           <Container>
-            <IncludeExclude />
+            <IncludeExclude location={location} />
           </Container>
         </Container>
         <Container fluid className="d-flex flex-column">
           <Container>
-            <BookNowComp />
+            <BookNowComp location={location} />
           </Container>
           <Container>
-            <ForAnyQComp />
+            <ForAnyQComp location={location} />
           </Container>
         </Container>
       </Container>
       <Container fluid className="d-flex flex-column">
         <Container>
-          <DetailsOfPlan />
+          <DetailsOfPlan location={location} />
         </Container>
       </Container>
       <Row className="d-flex justify-content-center m-4">

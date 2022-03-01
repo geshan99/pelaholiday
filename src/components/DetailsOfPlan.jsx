@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import DetailsOfPlanCSS from './DetailsOfPlan.module.css';
-import detailsOfPlanDataJSON from '../Data/PlanDetails.data';
+import APackageDataMain from '../Data/APackageDataMain';
 
-function DetailsOfPlan() {
+function DetailsOfPlan({ location }) {
+  const pageData = APackageDataMain(location).planDetails;
   return (
     <Container
       fluid
@@ -12,9 +13,9 @@ function DetailsOfPlan() {
       <Row className="my-3 mx-4 font-3">Details Of Plan</Row>
       <Row className="m-0 font-3">
         <ul className="mx-0 px-0">
-          {detailsOfPlanDataJSON.map((singleData) => {
+          {pageData.map((singleData) => {
             return (
-              <li className="d-flex">
+              <li className="d-flex" key={singleData.id}>
                 <Col className="col-auto px-4">{singleData.dayNum}</Col>
                 <section>
                   <div>{singleData.desData.desTitle}</div>
@@ -27,50 +28,6 @@ function DetailsOfPlan() {
               </li>
             );
           })}
-          {/* <li className="d-flex">
-            <Col className="col-auto px-4">Day 01</Col>
-            <section>
-              <div>Lorem ipsum dolor sit amet</div>
-              <ul style={{ listStyle: 'circle' }}>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              </ul>
-            </section>
-          </li> */}
-          {/* <li className="d-flex">
-            <Col className="col-auto px-4">Day 02</Col>
-            <section>
-              <div>Lorem ipsum dolor sit amet</div>
-              <ul style={{ listStyle: 'circle' }}>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              </ul>
-            </section>
-          </li>
-          <li className="d-flex">
-            <Col className="col-auto px-4">Day 03</Col>
-            <section>
-              <div>Lorem ipsum dolor sit amet</div>
-              <ul style={{ listStyle: 'circle' }}>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              </ul>
-            </section>
-          </li>
-          <li className="d-flex">
-            <Col className="col-auto px-4">Day 04</Col>
-            <section>
-              <div>Lorem ipsum dolor sit amet</div>
-              <ul style={{ listStyle: 'circle' }}>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-              </ul>
-            </section>
-          </li> */}
         </ul>
       </Row>
     </Container>

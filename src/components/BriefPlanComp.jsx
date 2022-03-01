@@ -1,9 +1,12 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import APackageMiddleCSS from './BriefPlanComp.module.css';
-import briefPlanDataJSON from '../Data/BriefPlanData.data';
+import APackageDataMain from '../Data/APackageDataMain';
 
-function BriefPlanComp({ briefPlanData }) {
+function BriefPlanComp({ location }) {
+  console.log('Brief');
+  console.log(location);
+  const pageData = APackageDataMain(location).briefPlanData;
   return (
     <Container
       fluid
@@ -12,7 +15,7 @@ function BriefPlanComp({ briefPlanData }) {
       <Row className="m-1 font-3">Brief Plan</Row>
       <Row className="m-0 font-3">
         <ul style={{ listStyleType: 'none' }} className="m-1 p-0">
-          {briefPlanDataJSON.map((singlebriefPlanData) => {
+          {pageData.map((singlebriefPlanData) => {
             return (
               <li>
                 {singlebriefPlanData.dayName}

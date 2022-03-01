@@ -8,7 +8,7 @@ function APackage() {
   return (
     <div>
       <WhereToGoUpper backPhoto={surfboard} title={'Sigiriya'} />
-      <APackageMiddle />
+      <APackageMiddle location="Sigiriya" />
       <Footer />
     </div>
   );

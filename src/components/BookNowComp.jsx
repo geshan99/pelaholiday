@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BookNowCompCSS from './BookNowComp.module.css';
-import bookNowDataJSON from '../Data/BookNow.data';
+import APackageDataMain from '../Data/APackageDataMain';
 
-function BookNowComp() {
+function BookNowComp({ location }) {
+  console.log('BookNow');
+  console.log(location);
+  const pageData = APackageDataMain(location).bookNowData;
+  console.log(pageData);
   return (
     <Container
       fluid
@@ -26,24 +30,28 @@ function BookNowComp() {
       <Row className="m-0 d-flex flex-column">
         <Row className="m-0">
           Tour Details -{' '}
-          <span className="mx-4">{bookNowDataJSON.tourDetails}</span>
+          <span className="mx-4">{pageData.tourDetails.tourDetails}</span>
         </Row>
         <Row className="m-0">
-          Tour Code - <span className="mx-4">{bookNowDataJSON.tourCode}</span>
+          Tour Code - <span className="mx-4">{pageData.tourCode.tourCode}</span>
         </Row>
         <Row className="m-0">
           Package Type -{' '}
-          <span className="mx-4">{bookNowDataJSON.packageType}</span>
+          <span className="mx-4">{pageData.packageType.packageType}</span>
         </Row>
         <Row className="m-0">
-          Durations - <span className="mx-4">{bookNowDataJSON.durations}</span>
+          Durations -{' '}
+          <span className="mx-4">{pageData.durations.durations}</span>
         </Row>
         <Row className="m-0">
-          Locations - <span className="mx-4">{bookNowDataJSON.locations}</span>
+          Locations -{' '}
+          <span className="mx-4">{pageData.locations.locations}</span>
         </Row>
         <Row className="m-0">
-          Package Capacity -{' '}
-          <span className="mx-4">{bookNowDataJSON.packageCapacity}</span>
+          Package Capacity -
+          <span className="mx-4">
+            {pageData.packageCapacity.packageCapacity}
+          </span>
         </Row>
       </Row>
     </Container>
