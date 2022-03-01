@@ -1,25 +1,16 @@
-import Footer from '../components/Footer';
+import Footer from "../components/Footer";
+import WhereToGoUpper from "../components/WhereToGoUpper";
+import surfboard from "../assets/A Page/surfboardScene.jpg";
+import BookongPageMiddle from "../components/BookingPageMiddle";
 
 function Booking() {
-  return (
-    <div>
-      Booking page
-      <br />
-      Booking page
-      <br />
-      Booking page
-      <br />
-      Booking page
-      <br />
-      Booking page
-      <br />
-      Booking page
-      <br />
-      Booking page
-      <br />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<WhereToGoUpper backPhoto={surfboard} title={"Polhena"} />
+			<BookongPageMiddle location={"Polhena"} />
+			<Footer />
+		</div>
+	);
 }
 
 export default Booking;
