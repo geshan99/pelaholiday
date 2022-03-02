@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import IncludeExcludeCSS from './IncludeExclude.module.css';
-import APackageDataMain from '../Data/APackageDataMain';
+import APackageDataMain from '../Data/PackagesData/APackageDataMain';
 
 function IncludeExclude({ location }) {
   const pageData = APackageDataMain(location).inExData;

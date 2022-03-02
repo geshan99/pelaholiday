@@ -1,4 +1,4 @@
-const planDetailsPolhena = [
+const planDetailsBeach = [
   {
     dayNum: 'Day 01',
     desData: {
@@ -45,7 +45,7 @@ const planDetailsPolhena = [
   },
 ];
 
-const planDetailsSigiriya = [
+const planDetailsDolphin = [
   {
     dayNum: 'Day 01',
     desData: {
@@ -59,7 +59,7 @@ const planDetailsSigiriya = [
   },
 ];
 
-const planDetailsDalada = [
+const planDetailsJungle = [
   {
     dayNum: 'Day 01',
     desData: {
@@ -84,4 +84,4 @@ const planDetailsDalada = [
   },
 ];
 
-export { planDetailsPolhena, planDetailsSigiriya, planDetailsDalada };
+export { planDetailsBeach, planDetailsDolphin, planDetailsJungle };

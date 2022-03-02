@@ -14,13 +14,11 @@ let icon = L.icon({
 
 const position = [6.857735, 79.893163];
 function LocationComp({ height, width }) {
-  console.log(height, width);
   return (
     <MapContainer
       center={position}
       zoom={16}
       style={{ height: `${height}`, width: `${width}` }}
-      // dragging={false}
       scrollWheelZoom={false}
     >
       <TileLayer

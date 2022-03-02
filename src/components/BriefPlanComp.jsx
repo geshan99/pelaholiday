@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import APackageMiddleCSS from './BriefPlanComp.module.css';
-import APackageDataMain from '../Data/APackageDataMain';
+import APackageDataMain from '../Data/PackagesData/APackageDataMain';
 
 function BriefPlanComp({ location }) {
   const pageData = APackageDataMain(location).briefPlanData;

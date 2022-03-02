@@ -6,8 +6,10 @@ import BriefPlanComp from './BriefPlanComp';
 import DetailsOfPlan from './DetailsOfPlan';
 import ForAnyQComp from './ForAnyQComp';
 import IncludeExclude from './IncludeExclude';
+import { useNavigate } from 'react-router-dom';
 
 function APackageMiddle({ location }) {
+  const navigate = useNavigate();
   return (
     <Container
       fluid
@@ -35,7 +37,14 @@ function APackageMiddle({ location }) {
         </Col>
       </Row>
       <Row className="d-flex justify-content-center m-4">
-        <Button variant="primary">Book this package</Button>
+        <Button
+          variant="primary"
+          onClick={() => {
+            navigate(`booking`);
+          }}
+        >
+          Book this package
+        </Button>
       </Row>
     </Container>
   );

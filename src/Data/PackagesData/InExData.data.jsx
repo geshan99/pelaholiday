@@ -1,4 +1,4 @@
-const inExDataPolhena = {
+const inExDataBeach = {
   include: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
   exclude: [
     'Lorem ipsum dolor sit amet',
@@ -7,7 +7,7 @@ const inExDataPolhena = {
   ],
 };
 
-const inExDataSigiriya = {
+const inExDataDolphin = {
   include: [
     'Lorem ipsum dolor sit amet',
     'Lorem ipsum dolor sit amet',
@@ -20,7 +20,7 @@ const inExDataSigiriya = {
   ],
 };
 
-const inExDataDalada = {
+const inExDataJungle = {
   include: ['Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet'],
   exclude: [
     'Lorem ipsum dolor sit amet',
@@ -29,4 +29,4 @@ const inExDataDalada = {
   ],
 };
 
-export { inExDataPolhena, inExDataSigiriya, inExDataDalada };
+export { inExDataBeach, inExDataDolphin, inExDataJungle };

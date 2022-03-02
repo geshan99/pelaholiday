@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BookNowCompCSS from './BookNowComp.module.css';
-import APackageDataMain from '../Data/APackageDataMain';
+import APackageDataMain from '../Data/PackagesData/APackageDataMain';
 
 function BookNowComp({ location }) {
   const pageData = APackageDataMain(location).bookNowData;
