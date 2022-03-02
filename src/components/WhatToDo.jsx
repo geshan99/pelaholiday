@@ -5,7 +5,11 @@ import WhatToDpMiddle from "./WhatToDoMiddle";
 function WhatToDo() {
 	return (
 		<div>
-			<WhereToGoUpper backPhoto={ademspeak} title="What to do" />
+			<WhereToGoUpper
+				backPhoto={ademspeak}
+				title="What to do"
+				type="type2"
+			/>
 			<WhatToDpMiddle />
 		</div>
 	);
