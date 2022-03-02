@@ -8,7 +8,7 @@ function DetailsOfPlan({ location }) {
   return (
     <Container
       fluid
-      className={`px-5 py-4 ${DetailsOfPlanCSS.detailsOfPlanBox} font-3`}
+      className={`mx-1 px-3 py-4 ${DetailsOfPlanCSS.detailsOfPlanBox} font-3`}
     >
       <Row className="my-3 mx-4 font-3">Details Of Plan</Row>
       <Row className="m-0 font-3">

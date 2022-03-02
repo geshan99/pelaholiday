@@ -8,8 +8,6 @@ function BookNowDataJSON(
   locations,
   packageCapacity
 ) {
-  console.log('book');
-  console.log(tourDetails);
   return {
     tourDetails: { tourDetails },
     tourCode: { tourCode },

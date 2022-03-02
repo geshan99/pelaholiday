@@ -4,8 +4,6 @@ import APackageMiddleCSS from './BriefPlanComp.module.css';
 import APackageDataMain from '../Data/APackageDataMain';
 
 function BriefPlanComp({ location }) {
-  console.log('Brief');
-  console.log(location);
   const pageData = APackageDataMain(location).briefPlanData;
   return (
     <Container

@@ -4,10 +4,7 @@ import BookNowCompCSS from './BookNowComp.module.css';
 import APackageDataMain from '../Data/APackageDataMain';
 
 function BookNowComp({ location }) {
-  console.log('BookNow');
-  console.log(location);
   const pageData = APackageDataMain(location).bookNowData;
-  console.log(pageData);
   return (
     <Container
       fluid

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Button } from 'react-bootstrap';
+import { Container, Row, Button, Col } from 'react-bootstrap';
 import APackageMiddleCSS from './APackageMiddle.module.css';
 import BookNowComp from './BookNowComp';
 import BriefPlanComp from './BriefPlanComp';
@@ -13,29 +13,27 @@ function APackageMiddle({ location }) {
       fluid
       className={`bg-blend-multiply px-0 py-4 ${APackageMiddleCSS.aPackageMiddleBackGroundImage}`}
     >
-      <Container fluid className="d-flex">
-        <Container fluid className="d-flex flex-column">
-          <Container>
-            <BriefPlanComp location={location} />
-          </Container>
-          <Container>
-            <IncludeExclude location={location} />
-          </Container>
-        </Container>
-        <Container fluid className="d-flex flex-column">
-          <Container>
-            <BookNowComp location={location} />
-          </Container>
-          <Container>
-            <ForAnyQComp location={location} />
-          </Container>
-        </Container>
-      </Container>
-      <Container fluid className="d-flex flex-column">
-        <Container>
+      <Row className="d-flex justify-content-around m-0">
+        <Col className="col-auto">
+          <BriefPlanComp location={location} />
+        </Col>
+        <Col className="col-auto">
+          <BookNowComp location={location} />
+        </Col>
+      </Row>
+      <Row className="d-flex justify-content-around m-0">
+        <Col className="col-auto">
+          <IncludeExclude location={location} />
+        </Col>
+        <Col className="col-auto">
+          <ForAnyQComp location={location} />
+        </Col>
+      </Row>
+      <Row className="d-flex justify-content-center m-0">
+        <Col className="col-auto">
           <DetailsOfPlan location={location} />
-        </Container>
-      </Container>
+        </Col>
+      </Row>
       <Row className="d-flex justify-content-center m-4">
         <Button variant="primary">Book this package</Button>
       </Row>
