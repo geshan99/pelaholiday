@@ -253,7 +253,7 @@ const mirissaWTG = {
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non temporibus nihil perspiciatis autem tempore placeat suscipit expedita consequatur eligendi, rerum dolores similique commodi culpa fuga molestias provident quod repudiandae? Ullam tempore, deleniti nihil, distinctio quisquam doloribus mollitia aut totam blanditiis culpa natus, eligendi quod hic. Officia animi veniam laudantium accusantium.',
   bgPhoto: mirissaBG,
-  location: [65.947774979114091, 80.45847334979052],
+  location: [5.944702366197709, 80.45916200678136],
 };
 
 export {
