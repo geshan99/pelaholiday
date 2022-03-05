@@ -12,11 +12,10 @@ let icon = L.icon({
   iconSize: 30,
 });
 
-const position = [6.857735, 79.893163];
-function LocationComp({ height, width }) {
+function LocationComp({ height, width, location }) {
   return (
     <MapContainer
-      center={position}
+      center={location}
       zoom={16}
       style={{ height: `${height}`, width: `${width}` }}
       scrollWheelZoom={false}
@@ -25,7 +24,7 @@ function LocationComp({ height, width }) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">2022PELAHolidays</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={position} icon={icon}>
+      <Marker position={location} icon={icon}>
         <Popup>
           <Image fluid width={80} height={80} src={logo}></Image>
           <h5>Pela Holiday</h5>

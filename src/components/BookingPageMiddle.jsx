@@ -14,7 +14,7 @@ function BookongPageMiddle({ location }) {
       className={`bg-blend-multiply px-0 py-4 ${APackageMiddleCSS.aPackageMiddleBackGroundImage}`}
     >
       <Container>
-        <Row>
+        <Row className="m-0">
           <Col
             className="md-6 m-3 p-4"
             style={{

@@ -8,7 +8,7 @@ import pinnawala from '../assets/Home Page/Moving Photos/pinnawala.jpg';
 import anuradhapura from '../assets/Home Page/Moving Photos/anuradhapura.jpg';
 import ALocationSliderCSS from './ALocationSlider.module.css';
 
-function ALocationSlider() {
+function ALocationSlider({ sliderImgArr }) {
   return (
     <Carousel
       controls={true}
@@ -21,22 +21,19 @@ function ALocationSlider() {
       }
     >
       <Carousel.Item>
-        <Image src={ninearch} className="w-100  "></Image>
+        <Image src={sliderImgArr[0]} className="w-100"></Image>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={safari} className="w-100 "></Image>
+        <Image src={sliderImgArr[1]} className="w-100"></Image>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={whale} className="w-100 "></Image>
+        <Image src={sliderImgArr[2]} className="w-100"></Image>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={stilt} className="w-100 "></Image>
+        <Image src={sliderImgArr[3]} className="w-100"></Image>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={pinnawala} className="w-100 "></Image>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image src={anuradhapura} className="w-100 "></Image>
+        <Image src={sliderImgArr[4]} className="w-100"></Image>
       </Carousel.Item>
     </Carousel>
   );

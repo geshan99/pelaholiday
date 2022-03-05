@@ -28,6 +28,10 @@
   display: none;
 }
 
+:global(.carousel-inner) {
+  height: 40vw;
+}
+
 /* .carouselComp {
   height: 100px;
 } */

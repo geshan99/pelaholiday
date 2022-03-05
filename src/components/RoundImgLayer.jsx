@@ -13,7 +13,13 @@ function RoundImgLayer({ img, description, type, link }) {
   console.log(img);
   if (type === 'type1') {
     return (
-      <Container className="containerRoundImg" fluid>
+      <Container
+        className="containerRoundImg"
+        fluid
+        onClick={() => {
+          navigate(`/${link}`);
+        }}
+      >
         <Container
           className="roundAvatar-1"
           style={{
@@ -55,7 +61,13 @@ function RoundImgLayer({ img, description, type, link }) {
     );
   } else if (type === 'type3') {
     return (
-      <Container className="containerRoundImg" fluid>
+      <Container
+        className="containerRoundImg"
+        fluid
+        onClick={() => {
+          navigate(`/${link}`);
+        }}
+      >
         <Container
           className="roundAvatar-1"
           style={{

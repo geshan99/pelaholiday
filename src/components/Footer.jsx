@@ -27,7 +27,11 @@ function Footer() {
         <Row className="mx-0 font-4">+94 70 441 1511</Row>
         <Row className="mx-0 my-1 font-4">info@pelaholidays.lk</Row>
         <Row className="mx-0 my-3 font-4">
-          <LocationComp height="12vw" width="12vw" />
+          <LocationComp
+            height="12vw"
+            width="12vw"
+            location={[6.857735, 79.893163]}
+          />
         </Row>
       </Col>
       <Col className="col-auto">

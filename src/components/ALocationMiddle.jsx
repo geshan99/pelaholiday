@@ -4,24 +4,25 @@ import ALocationSlider from './ALocationSlider';
 import LocationComp from './LocationComp';
 import ALocationMiddleCSS from './ALocationMiddle.module.css';
 
-function ALocationMiddle() {
+function ALocationMiddle({ sliderImgArr, bgImg, description, location }) {
   return (
     <Container
       fluid
       className={`bg-blend-multiply px-0 ${ALocationMiddleCSS.whereToGoBackGroundImage}`}
+      style={{
+        backgroundImage: `url("${bgImg}")`,
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+      }}
     >
-      <ALocationSlider />
-      <Row className="font-3 text-center py-5 m-0">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non temporibus
-        nihil perspiciatis autem tempore placeat suscipit expedita consequatur
-        eligendi, rerum dolores similique commodi culpa fuga molestias provident
-        quod repudiandae? Ullam tempore, deleniti nihil, distinctio quisquam
-        doloribus mollitia aut totam blanditiis culpa natus, eligendi quod hic.
-        Officia animi veniam laudantium accusantium.
+      <Row className="m-0">
+        <ALocationSlider sliderImgArr={sliderImgArr} />
       </Row>
+      <Row className="font-3 text-center py-5 m-0">{description}</Row>
       <Row className="d-flex justify-content-around py-5 mx-0">
         <Col className="col-auto">
-          <LocationComp height="25vw" width="25vw" />
+          <LocationComp height="25vw" width="25vw" location={location} />
         </Col>
         <Col
           className="border rounded-top rounded-bottom font-4 col-auto p-5"

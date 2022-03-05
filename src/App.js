@@ -22,7 +22,10 @@ function App() {
         <Route path="/Contact" element={<ContactUs></ContactUs>}></Route>
         <Route path="/packages" element={<Pakages></Pakages>}></Route>
         <Route path="/wheretogo" element={<WhereToGo></WhereToGo>}></Route>
-        <Route path="/alocation" element={<ALocation></ALocation>}></Route>
+        <Route
+          path="/wheretogo/:locationName"
+          element={<ALocation></ALocation>}
+        ></Route>
         <Route
           path="/packages/:packageName"
           element={<APackage></APackage>}
