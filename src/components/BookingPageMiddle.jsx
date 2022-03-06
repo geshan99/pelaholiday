@@ -15,8 +15,7 @@ function BookongPageMiddle({ location }) {
 		"mailto:sudasinghegeshan@gmail.com?subject=" + location + " Booking";
 	//TODO Change reciever email adress
 
-	function onChange(value) {
-		console.log("Captcha value:", value);
+	function onChange() {
 		setVerified(true);
 	}
 
@@ -127,7 +126,9 @@ function BookongPageMiddle({ location }) {
 								></Form.Control>
 							</Form.Group>
 							<br></br>
+
 							<ReCAPTCHA
+								//TODO change sitekey
 								sitekey="6Lf4obseAAAAALCJfmFuP-5YOcMt8v28ftd04Fnu"
 								className="recaptcha"
 								onChange={onChange}

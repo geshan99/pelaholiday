@@ -9,11 +9,7 @@ import { ScaleControl } from "react-leaflet";
 function ContactUsMiddle() {
 	const [verified, setVerified] = useState(false);
 	const handlesubmit = (e) => {
-		// console.log("dsd");
-		// window.location.href("/");
-		// e.target.reset();
 		e.target.reset();
-		// window.location.reload(true);
 	};
 	function onChange(value) {
 		console.log("Captcha value:", value);
@@ -207,6 +203,7 @@ function ContactUsMiddle() {
 										/>
 									</Form.Group>
 									<ReCAPTCHA
+										//TODO change sitekey
 										sitekey="6Lf4obseAAAAALCJfmFuP-5YOcMt8v28ftd04Fnu"
 										className="recaptcha"
 										onChange={onChange}
@@ -218,9 +215,6 @@ function ContactUsMiddle() {
 										type="submit"
 										value="Send"
 										disabled={!verified}
-										onClick={() => {
-											window.location.href("/");
-										}}
 									>
 										Submit
 									</Button>
