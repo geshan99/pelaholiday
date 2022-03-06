@@ -10,7 +10,8 @@ import Bookingdetails from "./BookingDetailsComp";
 function BookongPageMiddle({ location }) {
 	const messegeText =
 		"mailto:sudasinghegeshan@gmail.com?subject=" + location + " Booking";
-	// console.log(location);
+	//TODO Change reciever email adress
+
 	return (
 		<Container
 			fluid
