@@ -2,12 +2,23 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import HolidayPackagesMiddleCSS from "./HolidayPackagesMiddle.module.css";
 import "./ContactUsMiddle.css";
 import LocationComp from "./LocationComp";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState } from "react";
+import { ScaleControl } from "react-leaflet";
 
 function ContactUsMiddle() {
-	const handlesubmit = () => {
-		console.log("dsd");
+	const [verified, setVerified] = useState(false);
+	const handlesubmit = (e) => {
+		// console.log("dsd");
+		// window.location.href("/");
+		// e.target.reset();
+		e.target.reset();
+		// window.location.reload(true);
 	};
-
+	function onChange(value) {
+		console.log("Captcha value:", value);
+		setVerified(true);
+	}
 	return (
 		<div>
 			<Container
@@ -195,17 +206,24 @@ function ContactUsMiddle() {
 											}}
 										/>
 									</Form.Group>
+									<ReCAPTCHA
+										sitekey="6Lf4obseAAAAALCJfmFuP-5YOcMt8v28ftd04Fnu"
+										className="recaptcha"
+										onChange={onChange}
+										onExpired={() => setVerified(false)}
+									/>
 									<Button
 										variant="success"
 										className="m-4 btn-lg"
 										type="submit"
 										value="Send"
+										disabled={!verified}
+										onClick={() => {
+											window.location.href("/");
+										}}
 									>
 										Submit
 									</Button>
-									{/* <input type="submit" value="Send">
-										sdhnbh
-									</input> */}
 								</Col>
 							</Row>
 						</Form>

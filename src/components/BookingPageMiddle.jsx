@@ -6,11 +6,19 @@ import ForAnyQComp from "./ForAnyQComp";
 import "./ContactUsMiddle.css";
 import Booking from "../pages/Booking";
 import Bookingdetails from "./BookingDetailsComp";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState } from "react";
 
 function BookongPageMiddle({ location }) {
+	const [verified, setVerified] = useState(false);
 	const messegeText =
 		"mailto:sudasinghegeshan@gmail.com?subject=" + location + " Booking";
 	//TODO Change reciever email adress
+
+	function onChange(value) {
+		console.log("Captcha value:", value);
+		setVerified(true);
+	}
 
 	return (
 		<Container
@@ -118,11 +126,19 @@ function BookongPageMiddle({ location }) {
 									}}
 								></Form.Control>
 							</Form.Group>
+							<br></br>
+							<ReCAPTCHA
+								sitekey="6Lf4obseAAAAALCJfmFuP-5YOcMt8v28ftd04Fnu"
+								className="recaptcha"
+								onChange={onChange}
+								onExpired={() => setVerified(false)}
+							/>
 							<Button
 								variant="success"
 								className="m-4 btn-lg"
 								type="submit"
 								value="Send"
+								disabled={!verified}
 							>
 								Enquir Now
 							</Button>
