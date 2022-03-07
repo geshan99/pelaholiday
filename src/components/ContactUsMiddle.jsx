@@ -8,9 +8,7 @@ import { ScaleControl } from "react-leaflet";
 
 function ContactUsMiddle() {
 	const [verified, setVerified] = useState(false);
-	const handlesubmit = (e) => {
-		e.target.reset();
-	};
+
 	function onChange(value) {
 		console.log("Captcha value:", value);
 		setVerified(true);
@@ -61,7 +59,6 @@ function ContactUsMiddle() {
 						}}
 					>
 						<Form
-							onSubmit={handlesubmit}
 							action="mailto:sudasinghegeshan@gmail.com?subject=Contact form Data"
 							//TODO Change reciever email adress
 							method="POST"
