@@ -28,7 +28,11 @@ function ContactUsMiddle() {
               </div>
             </Col>
             <Col>
-              <LocationComp width="18vw" height="18vw" />
+              <LocationComp
+                width="18vw"
+                height="18vw"
+                location={[6.857735, 79.893163]}
+              />
             </Col>
           </Row>
           <Row>

@@ -25,15 +25,15 @@ function WhatToDpMiddle() {
     whaleWatching,
   ];
   const linkArray = [
-    'wheretogo/hiking',
-    'wheretogo/kiteSurfing',
-    'wheretogo/safari',
-    'wheretogo/scubaDiving',
-    'wheretogo/stiltFishing',
-    'wheretogo/surfing',
-    'wheretogo/waterRafting',
-    'wheretogo/waterSports',
-    'wheretogo/whaleWatching',
+    'whattodo/hiking',
+    'whattodo/kiteSurfing',
+    'whattodo/safari',
+    'whattodo/scubaDiving',
+    'whattodo/stiltFishing',
+    'whattodo/surfing',
+    'whattodo/waterRafting',
+    'whattodo/waterSports',
+    'whattodo/whaleWatching',
   ];
   return (
     <Container

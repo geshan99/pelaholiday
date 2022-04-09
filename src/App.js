@@ -5,9 +5,9 @@ import Booking from './pages/Booking';
 import ContactUs from './pages/ContactUs';
 import Pakages from './pages/Pakages';
 import WhereToGo from './pages/WhereToGo';
-import ALocation from './pages/ALocation';
 import APackage from './pages/APackage';
 import WhatToDo from './components/WhatToDo';
+import ALocationOrActivity from './pages/ALocationOrActivity';
 
 function App() {
   return (
@@ -24,13 +24,17 @@ function App() {
         <Route path="/wheretogo" element={<WhereToGo></WhereToGo>}></Route>
         <Route
           path="/wheretogo/:locationName"
-          element={<ALocation></ALocation>}
+          element={<ALocationOrActivity></ALocationOrActivity>}
         ></Route>
         <Route
           path="/packages/:packageName"
           element={<APackage></APackage>}
         ></Route>
         <Route path="/whattodo" element={<WhatToDo></WhatToDo>}></Route>
+        <Route
+          path="/whattodo/:locationName"
+          element={<ALocationOrActivity></ALocationOrActivity>}
+        ></Route>
       </Routes>
     </>
   );

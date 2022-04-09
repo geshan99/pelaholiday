@@ -8,6 +8,15 @@ import {
   hortonWTG,
   minneriyaWTG,
   mirissaWTG,
+  hikingWTD,
+  kiteSurfingWTD,
+  safariWTD,
+  scubaWTD,
+  stiltFishingWTD,
+  surfingWTD,
+  waterRaftingWTD,
+  whaleWatchingWTD,
+  waterSportsWTD,
 } from './WhereToGoDataStore';
 
 function WhereToGoDataMain(pageTitle) {
@@ -30,6 +39,24 @@ function WhereToGoDataMain(pageTitle) {
       return minneriyaWTG;
     case 'mirissa':
       return mirissaWTG;
+    case 'hiking':
+      return hikingWTD;
+    case 'kiteSurfing':
+      return kiteSurfingWTD;
+    case 'safari':
+      return safariWTD;
+    case 'scubaDiving':
+      return scubaWTD;
+    case 'stiltFishing':
+      return stiltFishingWTD;
+    case 'surfing':
+      return surfingWTD;
+    case 'waterRafting':
+      return waterRaftingWTD;
+    case 'whaleWatching':
+      return whaleWatchingWTD;
+    case 'waterSports':
+      return waterSportsWTD;
     default:
       return { message: 'somethings wrong' };
   }

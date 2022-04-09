@@ -20,6 +20,14 @@ function ALocationSlider({ sliderImgArr }) {
         ALocationSliderCSS.aLocationPageSlider
       }
     >
+      {/* {sliderImgArr.forEach((sliderImg) => {
+        console.log(sliderImg);
+        console.log("cc");
+        console.log(sliderImgArr[0]);
+        <Carousel.Item>
+          <Image src={sliderImg} className="w-100"></Image>
+        </Carousel.Item>;
+      })} */}
       <Carousel.Item>
         <Image src={sliderImgArr[0]} className="w-100"></Image>
       </Carousel.Item>

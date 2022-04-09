@@ -29,6 +29,7 @@ function WhereToGoUpper({ backPhoto, title, type }) {
           color: 'white',
           transform: 'translateX(-50%)',
           fontSize: 'calc(2.6em + 2.8vw)',
+          textShadow: '0px 0px 8px #000000',
         }}
       >
         {title}
@@ -83,6 +84,7 @@ function WhereToGoUpper({ backPhoto, title, type }) {
           color: 'white',
           transform: 'translateX(-50%)',
           fontSize: 'calc(2.6em + 2.8vw)',
+          textShadow: '0px 0px 8px #000000',
         }}
       >
         {title}
@@ -137,6 +139,7 @@ function WhereToGoUpper({ backPhoto, title, type }) {
           color: 'white',
           transform: 'translateX(-50%)',
           fontSize: 'calc(2.6em + 2.8vw)',
+          textShadow: '0px 0px 8px #000000',
         }}
       >
         {title}

@@ -6,8 +6,9 @@ import ALocationMiddle from '../components/ALocationMiddle';
 import { useParams } from 'react-router-dom';
 import WhereToGoDataMain from '../Data/locationData/WhereToGoDataMain';
 
-function ALocation() {
+function ALocationOrActivity() {
   const { locationName } = useParams();
+  console.log('GoHomeGota', locationName);
   const pageData = WhereToGoDataMain(locationName);
   console.log(pageData.topPhoto);
   return (
@@ -24,4 +25,4 @@ function ALocation() {
   );
 }
 
-export default ALocation;
+export default ALocationOrActivity;
